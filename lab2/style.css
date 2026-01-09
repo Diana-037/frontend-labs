@@ -1,0 +1,114 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+table.variant5 {
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+table.variant5 td {
+  border: 2px solid black;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.row1 {
+  background-color: #058f8f;
+  color: white;
+}
+
+.row2 {
+  background-color: #f5f505;
+  color: black;
+}
+
+.row1:hover {
+  background-color: #f5f505;
+  color: black;
+}
+
+.row2:hover {
+  background-color: #058f8f;
+  color: white;
+}
+
+/* ===== загальні стилі ===== */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+/* контейнер */
+.target {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 40px auto;
+}
+
+/* кола */
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+/* зовнішнє кільце */
+.outer {
+  width: 220px;
+  height: 220px;
+  border: 25px solid black;
+  top: 0;
+  left: 0;
+}
+
+/* внутрішнє коло */
+.inner {
+  width: 65px;
+  height: 65px;
+  background-color: black;
+  top: 78px;
+  left: 78px;
+}
+
+/* лінії */
+.line {
+  position: absolute;
+  background-color: black;
+}
+
+/* ===== РИСУНОК 1 — position ===== */
+.position-version .vertical {
+  width: 20px;
+  height: 300px;
+  left: 100px;
+  top: -40px;
+}
+
+.position-version .horizontal {
+  height: 20px;
+  width: 300px;
+  top: 100px;
+  left: -40px;
+}
+
+/* ===== РИСУНОК 2 — transform ===== */
+.transform-version .vertical {
+  width: 20px;
+  height: 300px;
+  transform: translate(100px, -40px);
+}
+
+.transform-version .horizontal {
+  height: 20px;
+  width: 300px;
+  transform: translate(-40px, 100px);
+}
