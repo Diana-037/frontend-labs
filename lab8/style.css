@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 10;          /* меню поверх усього */
+  background: transparent;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  color: #333;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  padding: 40px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: auto;
+  margin-right: 70px; 
+  color: #e9e9e9;
+}
+
+
+/* HERO */
+.hero {
+  position: relative;
+  padding-top: 0px;  
+}
+
+
+.hero-inner {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-family: Playfair Display, serif;
+  font-size: 32px;
+  line-height: 1.4;
+}
+
+.hero-image {
+  width: 50%;
+}
+
+.hero-image img {
+  width: 100%;
+  display: block;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.feature {
+  max-width: 240px;
+}
+
+.feature img {
+  width: 32px;
+  margin-bottom: 10px;
+}
+
+/* ABOUT */
+.about {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section-label {
+  color: #5ECAC3;
+  font-size: 30px;
+}
+
+.about h2 {
+  margin: 20px 0 40px;
+  font-family: Playfair Display, serif;
+}
+.about-items {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.about-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.about-item p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.icon-circle {
+  width: 72px;
+  height: 72px;
+  background: #5ECAC3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.icon-circle img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+
+/* GALLERY */
+.gallery {
+  padding: 80px 0;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+}
+
+/* PRICING */
+.pricing {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+}
+
+.price-card {
+  background: #5ECAC3;
+  color: white;
+  padding: 40px;
+}
+
+.premium {
+  background: #4FB7AE;
+}
+
+.enterprise {
+  background: #B6E6A2;
+}
+
+.price {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.price-card button {
+  margin-top: 20px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* TESTIMONIAL */
+
+/* TESTIMONIAL */
+.testimonial {
+  padding: 80px 0;
+}
+
+.testimonial-box {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;   /* КЛЮЧОВИЙ МОМЕНТ */
+  margin: 0 auto;
+}
+
+.testimonial-img {
+  width: 70%;              
+  display: block;
+}
+
+.testimonial-text {
+  position: absolute;        /* накладання */
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 45%;            
+  background: #5ECAC3;
+  color: #fff;
+
+  padding: 60px;
+}
+
+
+.testimonial-text {
+  position: absolute;
+  right: 0;
+  top: 70%;
+  transform: translateY(-50%);
+
+  width: 45%;
+  background: #5ECAC3;
+  color: #000000;
+
+  padding: 60px;
+  z-index: 2; 
+}
